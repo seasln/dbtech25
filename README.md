@@ -29,7 +29,7 @@ Zur Bearbeitung der Aufgaben müssen sie das Datenmodell in ihrer eigenen Datenb
 
 Die Verwendung der Logging-Einstellungen wird in der Übung erläutert.
 
-```java
+```
 -Dorg.slf4j.simpleLogger.showThreadName="false"
 -Dorg.slf4j.simpleLogger.logFile="System.out"
 -Dorg.slf4j.simpleLogger.log.org.dbunit="error"
@@ -107,7 +107,7 @@ Hinweise zur Implementierung der Ablehnungsregeln finden sie hier [(pdf)](https:
 Dieser Dienst soll in zwei Versionen implementiert werden:
 
 1. Implementierung wie bei Übung 2 in einer Klasse ```VersicherungService``` 
-1. Implementierung auf Grundlage eines Architekturmusters (Table-Data-Gateway, Row-Data-Gateway oder Data-Mapper) in
+2. Implementierung auf Grundlage eines Architekturmusters (Table-Data-Gateway, Row-Data-Gateway oder Data-Mapper) in
    einer Klasse ```VersicherungServiceDao``` und zusätzlichen Interfaces und Klassen zur Implementierung der DAOs
 
 ### Übung 4
