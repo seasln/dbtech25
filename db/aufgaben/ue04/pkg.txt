@@ -1,0 +1,21 @@
+create or replace package versicherungsservice as
+  exc_data exception;
+  pragma exception_init(exc_data, -20001);
+  exc_vertrag_existiert_nicht exception;
+  pragma exception_init(exc_vertrag_existiert_nicht, -20002);
+  exc_deckungsart_existiert_nicht exception;
+  pragma exception_init(exc_deckungsart_existiert_nicht, -20003);
+  exc_ungueltiger_deckungsbetrag exception;
+  pragma exception_init(exc_ungueltiger_deckungsbetrag, -20004);
+  exc_deckungsart_passt_nicht_zu_produkt exception;
+  pragma exception_init(exc_deckungsart_passt_nicht_zu_produkt, -20005);
+  exc_deckungsart_nicht_regelkonform exception;
+  pragma exception_init(exc_deckungsart_nicht_regelkonform, -20006);
+  exc_deckungspreis_nicht_vorhanden exception;
+  pragma exception_init(exc_deckungspreis_nicht_vorhanden, -20007);
+
+  procedure create_deckung (
+    p_vertrags_id vertrag.id%type,
+    p_deckungsart_id deckungsart.id%type,
+    p_deckungsbetrag deckung.deckungsbetrag%type);
+end versicherungsservice;

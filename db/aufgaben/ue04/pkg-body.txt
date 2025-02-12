@@ -1,0 +1,23 @@
+create or replace package body versicherungsservice as
+
+  procedure test(
+    p_vertrags_id vertrag.id%type
+  ) as
+  begin
+    dbms_output.put_line('test');
+    dbms_output.put_line(p_vertrags_id);
+  end test;
+
+  -----------------------------------------------------------------------------
+  -- transfer_sample
+  -----------------------------------------------------------------------------
+  procedure create_deckung (
+    p_vertrags_id vertrag.id%type,
+    p_deckungsart_id deckungsart.id%type,
+    p_deckungsbetrag deckung.deckungsbetrag%type
+  ) as
+  begin
+    test(p_vertrags_id);
+  end create_deckung;
+
+end versicherungsservice;
