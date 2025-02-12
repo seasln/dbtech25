@@ -74,7 +74,7 @@ Die Bearbeitung dieser Übung ist freiwillig, eine Abgabe der Lösungen ist nich
 
 ### Übung 2
 
-Diese Übung dient zur Implementierung einfacher Dienste in Java. Dabei geht es im wesentlichen um die Verwaltung der
+Diese Übung dient zur Implementierung einfacher Dienste in Java. Dabei geht es im Wesentlichen um die Verwaltung der
 Daten.
 
 ```java
@@ -91,7 +91,7 @@ Details zu den Diensten finden sie hier
 
 ### Übung 3
 
-Diese Übung dient zur Implementierung eines komplexen Dienstes in Java. Dabei geht es um die Festlegung von Versicherungsbedingungen, z.B. die Deckung bestimmter Schäden.
+Diese Übung dient zur Implementierung eines komplexen Dienstes in Java. Dabei geht es um die Festlegung von Versicherungsbedingungen, z.B. die Deckung bestimmter Risiken.
 
 ```java
 public interface IVersicherungService {
@@ -102,7 +102,7 @@ public interface IVersicherungService {
 Details zu dem Dienst finden sie hier
 [(link)](https://github.com/ic-htw/dbtech-vers/blob/main/javasrc/de/htwberlin/dbtech/aufgaben/ue03/IVersicherungService.java)
 
-Hinweise zur Implementierung der Ablehnungsregeln finden sie hier [(pdf)](https://github.com/ic-htw/dbtech-vers/blob/main/doc/vers-beschreibung.pdf)
+Hinweise zur Implementierung der Ablehnungsregeln finden sie hier [(pdf)](https://github.com/ic-htw/dbtech-vers/blob/main/doc/ablehnungsregeln.pdf)
 
 Dieser Dienst soll in zwei Versionen implementiert werden:
 
