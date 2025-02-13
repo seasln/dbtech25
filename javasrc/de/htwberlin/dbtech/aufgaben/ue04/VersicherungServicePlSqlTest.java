@@ -57,7 +57,7 @@ public class VersicherungServicePlSqlTest {
      */
     @org.junit.Test(expected = VertragExistiertNichtException.class)
     public void createDeckung01() {
-        vService.createDeckung(99, 99, BigDecimal.valueOf(0));
+        vService.createDeckung(99, 1, BigDecimal.valueOf(0));
     }
 
     /**
@@ -117,9 +117,10 @@ public class VersicherungServicePlSqlTest {
     }
 
     /**
-     * Vertrag 6 (KFZV) hat einen Kunden, der noch kein Jahr alt ist. Deckungsart 1
+     * Vertrag 6 (KFZV) hat einen Kunden, der noch nicht 18 Jahre alt ist. Deckungsart 1
      * (Haftung) passt zu KFZV und Deckungsbetrag 100 Mio ebenfalls. Haftung wird
      * aber fuer Kunden unter 18 nicht angeboten.
+     * Achtung: Alter bezieht sich auf Versicherungszeitraum
      */
     @org.junit.Test(expected = DeckungsartNichtRegelkonformException.class)
     public void createDeckung08() {
@@ -130,6 +131,7 @@ public class VersicherungServicePlSqlTest {
      * Vertrag 7 (LBV) hat einen Kunden, der der aelter als 90 Jahre ist.
      * Deckungsart 3 (Tod) passt zu LBV und Deckungsbetrag 100 Tsd ebenfalls. Tod
      * wird aber fuer Kunden ueber 90 nicht angeboten.
+     * Achtung: Alter bezieht sich auf Versicherungszeitraum
      */
     @org.junit.Test(expected = DeckungsartNichtRegelkonformException.class)
     public void createDeckung09() {
@@ -140,6 +142,7 @@ public class VersicherungServicePlSqlTest {
      * Vertrag 8 (LBV) hat einen Kunden, der der aelter als 70 Jahre ist.
      * Deckungsart 3 (Tod) passt zu LBV und Deckungsbetrag 200 Tsd ebenfalls. Tod
      * mit einem Betrag von 200 Tsd wird aber fuer Kunden ueber 70 nicht angeboten.
+     * Achtung: Alter bezieht sich auf Versicherungszeitraum
      */
     @org.junit.Test(expected = DeckungsartNichtRegelkonformException.class)
     public void createDeckung10() {
@@ -150,6 +153,7 @@ public class VersicherungServicePlSqlTest {
      * Vertrag 9 (LBV) hat einen Kunden, der der aelter als 60 Jahre ist.
      * Deckungsart 3 (Tod) passt zu LBV und Deckungsbetrag 300 Tsd ebenfalls. Tod
      * mit einem Betrag von 300 Tsd wird aber fuer Kunden ueber 60 nicht angeboten.
+     * Achtung: Alter bezieht sich auf Versicherungszeitraum
      */
     @org.junit.Test(expected = DeckungsartNichtRegelkonformException.class)
     public void createDeckung11() {
@@ -159,6 +163,7 @@ public class VersicherungServicePlSqlTest {
     /**
      * Die folgenden Deckungserzeugungen sind ok und muessen in der Datebank
      * eingetragen werden.
+     * Achtung: Alter bezieht sich auf Versicherungszeitraum
      */
     @org.junit.Test
     public void createDeckung12() throws Exception {
