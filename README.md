@@ -10,7 +10,7 @@ mit der IDE ihrer Wahl (VS Code, IntelliJ, Eclipse)
 - Anleitung Import
   [(link)](https://ic-htw.github.io/home/lv/dbtech/p/github-import.html)
 - Anleitung VS Code
-  [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-vscode.html)
+  [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-vscode-vers.html)
 - Anleitung IntelliJ
   [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-intellij.html)
 - Anleitung Eclipse
