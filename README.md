@@ -5,14 +5,14 @@ Berlin. Die Aufgaben basieren auf dem Anwendungsfall einer Versicherung.
 
 Importieren sie das Repository in ihren eigenen Github-Account und setzen sie die Sichtbarkeit auf "private", damit
 andere Gruppen nicht ihre Lösungen einsehen können. Klonen sie dann ihr Repository (nicht meines) und bearbeiten sie es
-mit der IDE ihrer Wahl (VS Code, IntelliJ, Eclipse)
+mit der IDE ihrer Wahl (IntelliJ, VS Code)
 
 - Anleitung Import
   [(link)](https://ic-htw.github.io/home/lv/dbtech/p/github-import.html)
-- Anleitung VS Code
-  [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-vscode-vers.html)
 - Anleitung IntelliJ
   [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-intellij-vers.html)
+- Anleitung VS Code
+  [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-vscode-vers.html)
 
 ## Datenmodell
 
