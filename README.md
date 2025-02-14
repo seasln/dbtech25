@@ -13,8 +13,6 @@ mit der IDE ihrer Wahl (VS Code, IntelliJ, Eclipse)
   [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-vscode-vers.html)
 - Anleitung IntelliJ
   [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-intellij-vers.html)
-- Anleitung Eclipse
-  [(link)](https://ic-htw.github.io/home/lv/dbtech/p/ide-eclipse.html)
 
 ## Datenmodell
 
